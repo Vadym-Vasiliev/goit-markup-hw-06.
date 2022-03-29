@@ -22,9 +22,12 @@
 /* ховер иконок команды #ffffff */
 /* текст хайден интересов #ffffff */
 /* текст хайден карточки #ffffff */
+/* кнопка close #000000 */
 
 /* цвет акцента #2196F3 */
 /* бордер шапки #ECECEC */
+
+/* кубик cubic-bezier(0.4, 0, 0.2, 1) */
 
 :root {
   --bgc-main: #ffffff;
@@ -51,9 +54,12 @@
   --hover-icon-team: #ffffff;
   --hidden-text-interests: #ffffff;
   --hidden-text-cards: #ffffff;
+  --btn-close: #000000;
 
   --accent: #2196f3;
   --border-header: #ececec;
+
+  --сubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -802,5 +808,28 @@ body {
   align-items: center;
   justify-content: center;
 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   background-color: #fff;
+  color: var(--btn-close);
+}
+
+.modal .close-svg {
+  fill: currentColor;
+}
+
+.modal .close-btn:hover,
+.modal .close-btn:focus {
+  color: var(--accent);
+}
+
+/* form modal */
+
+.form-modal {
+  display: block;
+  padding: 10px 40px 40px 40px;
+}
+
+.form-modal textarea {
+  resize: none;
 }
