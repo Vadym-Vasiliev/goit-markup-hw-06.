@@ -455,29 +455,46 @@
             </button>
 
             <form class="form-modal"> 
-                Оставьте свои данные, мы вам перезвоним
-                <br>
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name">
-                <br>
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel">
-                <br>    
-                <label for="mail">Почта</label>
-                <input type="email" name="mail" id="mail">
-                <br>
-                <label for="comment">Комментарий</label>
-                <textarea name="comment" id="comment" rows="1" placeholder="Введите текст"></textarea>
-                <br>
-                <input type="checkbox" name="policy" id="policy">
-                <label for="policy">Соглашаюсь с рассылкой и принимаю </label>
-                <a href="">Условия договора</a>
+                <p class="text-modal">Оставьте свои данные, мы вам перезвоним</p> 
                 
+                <div class="form-field">
+                    <label class="label-modal" for="name">Имя</label>
+                    <input class="input-all" type="text" name="name" id="name">
+                    <svg class="svg-modal" width="18" height="18">
+                        <use href="./img/icon/sprite.svg#icon-mail-modal"></use>
+                    </svg>
+                </div>
                 
-
-
-                <br>
-                <button type="submit" class="btn-modal">Отправить</button>
+                <div class="form-field">
+                    <label class="label-modal" for="tel">Телефон</label>
+                    <input class="input-all" type="tel" name="tel" id="tel">
+                    <svg class="svg-modal" width="18" height="18">
+                        <use href="./img/icon/sprite.svg#icon-mail-modal"></use>
+                    </svg>
+                </div>
+                
+                <div class="form-field">
+                    <label class="label-modal" for="mail">Почта</label>
+                    <input class="input-all" type="email" name="mail" id="mail">
+                    <svg class="svg-modal" width="18" height="18">
+                        <use href="./img/icon/sprite.svg#icon-mail-modal"></use>
+                    </svg>
+                </div>
+                
+                <div class="form-field">
+                    <label class="label-modal" for="comment">Комментарий</label>
+                    <textarea class="comment" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                </div>
+                
+                <div class="form-checkbox">
+                    <input type="checkbox" name="policy" id="policy">
+                    <label class="label-checkbox label-letter" for="policy">Соглашаюсь с рассылкой и принимаю </label>
+                    <a href="" class="link-checkbox">Условия договора</a>
+                </div>
+                
+                <div class="under-btn-modal">
+                    <button type="submit" class="btn-modal">Отправить</button>
+                </div>
             </form>
         </div>
     </div>
