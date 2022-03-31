@@ -924,16 +924,22 @@ body {
   position: relative;
 }
 
+.input-all{
+  padding: 0 42px;
+}
+
 .svg-modal {
   position: absolute;
   left: 0;
   top: 0;
   display: inline-block;
+  width: 18px;
+  height: 18px;
 
-  transform: translateY(29px);
+  transform: translateY(31px);
   margin-left: 15px;
 
-  /* background-color: #212121; */
+  
   color: var(--text-second);
 }
 
@@ -942,5 +948,5 @@ body {
 }
 
 .input-all:focus ~ .svg-modal {
-  background-color: var(--accent);
+  color: var(--accent);
 }
