@@ -584,6 +584,7 @@ body {
 
 
 .input-email{
+  outline: none;
   padding-left: 16px;
   height: 50px;
   width: 358px;
@@ -596,6 +597,10 @@ letter-spacing: inherit;
 
   background-color: transparent;
   color: #ffffff;;
+}
+
+.input-email:focus{
+  border-color: var(--accent);
 }
 
 .email-input .btn-email{
@@ -898,12 +903,21 @@ align-items: center;
   color: var(--text-second);
 }
 
+
+
 .form-modal .input-all,
 .form-modal .comment {
+  outline: none;
   height: 40px;
   border: 1px solid var(--border-form);
   border-radius: 4px;
 }
+
+.comment:focus{
+  border-color: var(--accent);
+}
+
+
 
 .form-modal .form-field {
   display: flex;
@@ -924,6 +938,8 @@ align-items: center;
 .form-modal .label-modal:not(:last-child) {
   margin-bottom: 4px;
 }
+
+
 
 .label-checkbox.label-letter {
   letter-spacing: inherit;
@@ -985,18 +1001,19 @@ align-items: center;
 
 .input-all{
   padding: 0 42px;
+  outline: none;
   
 }
 
 .svg-modal {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
   display: inline-block;  
   width: 18px;
   height: 18px;
 
-  transform: translateY(29px);
+ 
   margin-left: 15px;
 
   
@@ -1011,4 +1028,8 @@ align-items: center;
   color: var(--accent);
 }
 
+.input-all:focus{
+border-color: var(--accent);
+
+}
 
