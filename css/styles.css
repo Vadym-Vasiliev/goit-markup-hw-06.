@@ -994,6 +994,10 @@ align-items: center;
   letter-spacing: inherit;
   margin-left: 7px;
   margin-right: 7px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;  
+
 }
 
 .form-modal .comment {
