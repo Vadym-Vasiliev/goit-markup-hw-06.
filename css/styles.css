@@ -956,13 +956,13 @@ align-items: center;
   width: 16px;
   height: 15px;
   border-radius: 4px;
-  border: 2px solid #212121;
+  border: 2px solid var(--text-second);
   margin-right: 7px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
+
+
 
 .input-checkbox:checked + .label-checkbox::before{
   background-color:  var(--accent);
@@ -972,7 +972,10 @@ align-items: center;
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent);
+
 }
+
+
 
 
 
