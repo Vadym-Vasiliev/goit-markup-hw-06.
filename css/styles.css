@@ -838,7 +838,7 @@ align-items: center;
 
 .modal {
   position: absolute;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(0.9);
   top: 50%;
   left: 50%;
   z-index: 18;
@@ -857,7 +857,7 @@ align-items: center;
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .modal .close-btn {
